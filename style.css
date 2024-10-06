@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: sans-serif;
+}
+main{
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.openModalButton{
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgb(116, 50, 116);
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(235, 20, 20, 0.84);
+}
+.main p{
+    font-size: xx-large;
+}
+.modal_content{
+    background-color: white;
+    padding: 2rem;
+    position: relative;
+}
+.modal_buttons{
+    align-items: center;
+    margin-top: 1rem;
+}
+.close{
+    display: none;
+}
+.close_modal{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}   
+.overflow{
+    overflow: hidden;
+}
